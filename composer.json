@@ -1,0 +1,47 @@
+{
+    "name": "james.xue/laravel-package-skeleton",
+    "description": "Laravel package template",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Vinhson\\LaravelPackageSkeleton\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Vinhson\\LaravelPackageSkeleton\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "xiaoxuan6",
+            "email": "1527736751@qq.com"
+        }
+    ],
+    "require-dev": {
+        "orchestra/testbench": "^4.0||^5.0||^6.0||^7.0",
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "laravel/legacy-factories": "1.x-dev"
+    },
+    "require": {
+        "php": ">=7.2.5",
+        "laravel/framework": "^6.0||^7.0||^8.0||^9.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers":[
+                "Vinhson\\LaravelPackageSkeleton\\LaravelPackageSkeletonServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "fix-style": "vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.php --using-cache=no --ansi"
+    },
+    "scripts-descriptions": {
+        "test": "Run all tests.",
+        "fix-style": "Run style checks and fix violations."
+    }
+}
