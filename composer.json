@@ -1,16 +1,16 @@
 {
-    "name": "james.xue/laravel-package-skeleton",
-    "description": "Laravel package template",
+    "name": "james.xue/laravel-company-search",
+    "description": "Laravel Company Search API",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Vinhson\\LaravelPackageSkeleton\\": "src/"
+            "Vinhson\\LaravelCompanySearch\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Vinhson\\LaravelPackageSkeleton\\Tests\\": "tests/"
+            "Vinhson\\LaravelCompanySearch\\Tests\\": "tests/"
         }
     },
     "authors": [
@@ -21,17 +21,17 @@
     ],
     "require-dev": {
         "orchestra/testbench": "^4.0||^5.0||^6.0||^7.0",
-        "friendsofphp/php-cs-fixer": "^3.0",
-        "laravel/legacy-factories": "1.x-dev"
+        "friendsofphp/php-cs-fixer": "^3.0"
     },
     "require": {
         "php": ">=7.2.5",
-        "laravel/framework": "^6.0||^7.0||^8.0||^9.0"
+        "laravel/framework": "^6.0||^7.0||^8.0||^9.0",
+        "guzzlehttp/guzzle": "7.4.x-dev"
     },
     "extra": {
         "laravel": {
             "providers":[
-                "Vinhson\\LaravelPackageSkeleton\\LaravelPackageSkeletonServiceProvider"
+                "Vinhson\\LaravelCompanySearch\\LaravelCompanySearchServiceProvider"
             ]
         }
     },

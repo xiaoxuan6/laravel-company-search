@@ -7,10 +7,12 @@
  * This source file is subject to the MIT license that is bundled
  * with this source code in the file LICENSE.
  */
-namespace Vinhson\LaravelPackageSkeleton\Tests\Models;
+return [
+    'default' => env('SEARCH_CONNECTION', 'search'),
 
-use Illuminate\Database\Eloquent\Model;
-
-class Author extends Model
-{
-}
+    'connections' => [
+        'search' => [
+            'appcode' => ''
+        ]
+    ]
+];

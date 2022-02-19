@@ -7,24 +7,27 @@
  * This source file is subject to the MIT license that is bundled
  * with this source code in the file LICENSE.
  */
-namespace Vinhson\LaravelPackageSkeleton\Tests;
+namespace Vinhson\LaravelCompanySearch\Tests;
 
 use Illuminate\Foundation\Application;
-use Illuminate\Database\Schema\Blueprint;
-use Vinhson\LaravelPackageSkeleton\LaravelPackageSkeletonServiceProvider;
+use Vinhson\LaravelCompanySearch\LaravelCompanySearchServiceProvider;
 
 abstract class TestCase extends \Orchestra\Testbench\TestCase
 {
     /**
-     * Setup the test environment.
+     * Define environment setup.
+     *
+     * @param Application $app
      *
      * @return void
      */
-    protected function setUp(): void
+    protected function getEnvironmentSetUp($app)
     {
-        parent::setUp();
+        $app['config']->set('search.default', 'search');
 
-//        $this->setUpDatabase();
+        $app['config']->set('search.connections.search', [
+            'appcode' => '******',
+        ]);
     }
 
     /**
@@ -37,21 +40,7 @@ abstract class TestCase extends \Orchestra\Testbench\TestCase
     protected function getPackageProviders($app): array
     {
         return [
-            LaravelPackageSkeletonServiceProvider::class
+            LaravelCompanySearchServiceProvider::class
         ];
-    }
-
-    /**
-     * @deprecated
-     */
-    private function setUpDatabase()
-    {
-        $this->app['db']->connection()->getSchemaBuilder()->dropIfExists('authors');
-
-        $this->app['db']->connection()->getSchemaBuilder()->create('authors', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('name');
-            $table->timestamps();
-        });
     }
 }

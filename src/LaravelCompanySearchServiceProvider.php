@@ -7,11 +7,11 @@
  * This source file is subject to the MIT license that is bundled
  * with this source code in the file LICENSE.
  */
-namespace Vinhson\LaravelPackageSkeleton;
+namespace Vinhson\LaravelCompanySearch;
 
 use Illuminate\Support\ServiceProvider;
 
-class LaravelPackageSkeletonServiceProvider extends ServiceProvider
+class LaravelCompanySearchServiceProvider extends ServiceProvider
 {
     /**
      * Indicates if loading of the provider is deferred.
@@ -27,16 +27,10 @@ class LaravelPackageSkeletonServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->publishes([
-            dirname(__DIR__) . '/migrations/' => database_path('migrations'),
-        ], 'migrations');
-
-        $this->publishes([
-            __DIR__ . '/../config/config.php' => config_path('config.php')
-        ], 'config');
-
         if ($this->app->runningInConsole()) {
-            $this->loadMigrationsFrom(dirname(__DIR__) . '/migrations/');
+            $this->publishes([
+                __DIR__ . '/../config/search.php' => config_path('search.php')
+            ], 'laravel-company-search');
         }
     }
 
@@ -49,6 +43,9 @@ class LaravelPackageSkeletonServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        $this->app->singleton('laravel-company-search', function ($app) {
+            return new LaravelCompanySearchManager($app);
+        });
     }
 
     /**
@@ -58,6 +55,8 @@ class LaravelPackageSkeletonServiceProvider extends ServiceProvider
      */
     public function provides(): array
     {
-        return [];
+        return [
+            'laravel-company-search'
+        ];
     }
 }
