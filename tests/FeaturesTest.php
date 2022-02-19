@@ -23,7 +23,7 @@ class FeaturesTest extends TestCase
         $result = LaravelCompanySearch::search('91411400MA46DL7H1G');
 
         $this->assertTrue($result->isSuccess(), $result->getReason());
-        $this->assertTrue($result->isFail(), $result->getReason());
+        $this->assertFalse($result->isFail(), $result->getReason());
         $this->assertIsArray($result->getInvestorList(), $result->getReason());
         $this->assertNotEmpty($result->getInvestorList(), $result->getReason());
     }

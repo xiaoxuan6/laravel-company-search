@@ -37,7 +37,7 @@ class ResultResponse
 
     public function isFail(): bool
     {
-        return $this->status !== 200 || $this->response['status'] !== 200;
+        return ! $this->isSuccess();
     }
 
     public function getReason(): string
@@ -49,7 +49,7 @@ class ResultResponse
         return self::ERROR_CODE[$this->status] ?? $this->response['msg'];
     }
 
-    private function getData(): array
+    public function getData(): array
     {
         return $this->response['data']['data']['result']['result'] ?? [];
     }
