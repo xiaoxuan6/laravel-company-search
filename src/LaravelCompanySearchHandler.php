@@ -39,7 +39,7 @@ class LaravelCompanySearchHandler
             $result = (new Client(['timeout' => 30, 'verify' => false]))
                 ->request(Request::METHOD_GET, self::URI . '/lianzhuo/cdetails?' . http_build_query($params), [
                     'headers' => [
-                        'Authorization' => 'APPCODE ' . $this->config['appcode'],
+                        'Authorization' => 'APPCODE ' . $this->config['appcode'] ?? '',
                         'Content-Type' => 'application/json',
                         'charset' => 'utf-8'
                     ]

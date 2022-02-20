@@ -10,6 +10,7 @@
 namespace Vinhson\LaravelCompanySearch\Tests;
 
 use Illuminate\Foundation\Application;
+use Vinhson\LaravelCompanySearch\Facades\LaravelCompanySearch;
 use Vinhson\LaravelCompanySearch\LaravelCompanySearchServiceProvider;
 
 abstract class TestCase extends \Orchestra\Testbench\TestCase
@@ -41,6 +42,20 @@ abstract class TestCase extends \Orchestra\Testbench\TestCase
     {
         return [
             LaravelCompanySearchServiceProvider::class
+        ];
+    }
+
+    /**
+     * Get package aliases.
+     *
+     * @param Application $app
+     *
+     * @return array
+     */
+    protected function getPackageAliases($app): array
+    {
+        return [
+            LaravelCompanySearch::class
         ];
     }
 }

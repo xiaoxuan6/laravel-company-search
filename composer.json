@@ -21,7 +21,8 @@
     ],
     "require-dev": {
         "orchestra/testbench": "^4.0||^5.0||^6.0||^7.0",
-        "friendsofphp/php-cs-fixer": "^3.0"
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "mockery/mockery": "^1.5"
     },
     "require": {
         "php": ">=7.2.5",
@@ -37,7 +38,7 @@
     },
     "minimum-stability": "dev",
     "scripts": {
-        "test": "vendor/bin/phpunit",
+        "test": "vendor/bin/phpunit --colors=always",
         "fix-style": "vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.php --using-cache=no --ansi"
     },
     "scripts-descriptions": {
