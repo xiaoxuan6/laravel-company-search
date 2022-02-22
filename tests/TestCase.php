@@ -24,11 +24,7 @@ abstract class TestCase extends \Orchestra\Testbench\TestCase
      */
     protected function getEnvironmentSetUp($app)
     {
-        $app['config']->set('search.default', 'search');
-
-        $app['config']->set('search.connections.search', [
-            'appcode' => '******',
-        ]);
+        $app['config']->set('search.appcode', '');
     }
 
     /**
@@ -55,7 +51,7 @@ abstract class TestCase extends \Orchestra\Testbench\TestCase
     protected function getPackageAliases($app): array
     {
         return [
-            LaravelCompanySearch::class
+            'laravel-company-search' => LaravelCompanySearch::class
         ];
     }
 }

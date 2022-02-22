@@ -9,16 +9,34 @@
  */
 namespace Vinhson\LaravelCompanySearch;
 
+use InvalidArgumentException;
 use Illuminate\Support\Manager;
 
 class LaravelCompanySearchManager extends Manager
 {
+    private $instance;
+
+    /**
+     * Get a driver instance.
+     *
+     *
+     * @throws InvalidArgumentException
+     */
+    public function driver($driver = null)
+    {
+        if (empty($this->instance)) {
+            $this->instance = $this->createSearchDriver();
+        }
+
+        return $this->instance;
+    }
+
     /**
      * @inheritDoc
      */
     public function getDefaultDriver(): string
     {
-        return $this->config->get('search.default', 'search');
+        return '';
     }
 
     /**
@@ -26,10 +44,6 @@ class LaravelCompanySearchManager extends Manager
      */
     public function createSearchDriver(): LaravelCompanySearchHandler
     {
-        $driver = $this->getDefaultDriver();
-
-        $config = $this->config->get("search.connections.$driver");
-
-        return new LaravelCompanySearchHandler($config);
+        return new LaravelCompanySearchHandler($this->config);
     }
 }

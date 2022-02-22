@@ -10,6 +10,7 @@
 namespace Vinhson\LaravelCompanySearch;
 
 use GuzzleHttp\Client;
+use Illuminate\Contracts\Config\Repository;
 use Symfony\Component\HttpFoundation\Request;
 use GuzzleHttp\Exception\{GuzzleException, RequestException};
 
@@ -17,9 +18,14 @@ class LaravelCompanySearchHandler
 {
     public const URI = 'https://cdetail.market.alicloudapi.com';
 
-    private array $config;
+    /**
+     * The configuration repository instance.
+     *
+     * @var Repository
+     */
+    protected $config;
 
-    public function __construct($config)
+    public function __construct(Repository $config)
     {
         $this->config = $config;
     }
@@ -39,7 +45,7 @@ class LaravelCompanySearchHandler
             $result = (new Client(['timeout' => 30, 'verify' => false]))
                 ->request(Request::METHOD_GET, self::URI . '/lianzhuo/cdetails?' . http_build_query($params), [
                     'headers' => [
-                        'Authorization' => 'APPCODE ' . $this->config['appcode'] ?? '',
+                        'Authorization' => 'APPCODE ' . $this->config->get('search.appcode', ''),
                         'Content-Type' => 'application/json',
                         'charset' => 'utf-8'
                     ]

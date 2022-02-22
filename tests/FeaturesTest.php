@@ -65,7 +65,6 @@ class FeaturesTest extends TestCase
         /** @var $result ResultResponse */
         $result = $manager->search('91411400MA46DL7H1G');
 
-
         $this->assertTrue($result->isSuccess(), $result->getReason());
         $this->assertFalse($result->isFail(), $result->getReason());
         $this->assertIsArray($result->getInvestorList(), $result->getReason());

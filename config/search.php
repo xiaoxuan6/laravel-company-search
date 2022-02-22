@@ -8,11 +8,5 @@
  * with this source code in the file LICENSE.
  */
 return [
-    'default' => env('SEARCH_CONNECTION', 'search'),
-
-    'connections' => [
-        'search' => [
-            'appcode' => ''
-        ]
-    ]
+    'appcode' => env('SEARCH_APPCODE', ''),
 ];
