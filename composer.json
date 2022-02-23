@@ -33,7 +33,10 @@
         "laravel": {
             "providers":[
                 "Vinhson\\LaravelCompanySearch\\LaravelCompanySearchServiceProvider"
-            ]
+            ],
+            "aliases": {
+                "laravel-company-search": "Vinhson\\LaravelCompanySearch\\Facades\\LaravelCompanySearch"
+            }
         }
     },
     "minimum-stability": "dev",

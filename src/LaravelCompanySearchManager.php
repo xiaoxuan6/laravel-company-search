@@ -19,7 +19,6 @@ class LaravelCompanySearchManager extends Manager
     /**
      * Get a driver instance.
      *
-     *
      * @throws InvalidArgumentException
      */
     public function driver($driver = null)
