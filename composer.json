@@ -46,5 +46,7 @@
     "scripts-descriptions": {
         "test": "Run all tests.",
         "fix-style": "Run style checks and fix violations."
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
