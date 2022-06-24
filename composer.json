@@ -27,7 +27,7 @@
     },
     "require": {
         "php": ">=7.2.5",
-        "guzzlehttp/guzzle": "7.4.x-dev"
+        "guzzlehttp/guzzle": "^7.4"
     },
     "extra": {
         "laravel": {
