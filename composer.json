@@ -1,6 +1,6 @@
 {
     "name": "james.xue/laravel-company-search",
-    "description": "Laravel Company Search API",
+    "description": "Laravel Company Search API（根据企业全名、工商注册号、组织机构代码、统一信用代码查询企业各维度数据，包含工商基本信息（含40多个项目）、股东高管、投资公司、分支机构、变更、诉讼、商标、经营异常、年报等。）",
     "type": "library",
     "license": "MIT",
     "autoload": {
