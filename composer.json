@@ -22,11 +22,13 @@
     "require-dev": {
         "orchestra/testbench": "^4.0||^5.0||^6.0||^7.0",
         "friendsofphp/php-cs-fixer": "^3.0",
-        "laravel/framework": "^6.0||^7.0||^8.0||^9.0",
-        "mockery/mockery": "^1.5"
+        "laravel/framework": "^6.0||^7.0||^8.0||^9.0||^10.0",
+        "mockery/mockery": "^1.5",
+        "rector/rector": "^0.17.0"
     },
     "require": {
-        "php": ">=7.2.5",
+        "php": ">=7.4",
+        "ext-json": "*",
         "guzzlehttp/guzzle": "^7.4"
     },
     "extra": {
@@ -41,11 +43,16 @@
     },
     "scripts": {
         "test": "vendor/bin/phpunit --colors=always",
-        "fix-style": "vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.php --using-cache=no --ansi"
+        "pint": "vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.php --using-cache=no --ansi",
+        "rector": "vendor/bin/rector process --no-diffs --clear-cache --ansi",
+        "fix": [
+            "@rector",
+            "@pint"
+        ]
     },
     "scripts-descriptions": {
         "test": "Run all tests.",
-        "fix-style": "Run style checks and fix violations."
+        "pint": "Run style checks and fix violations."
     },
     "minimum-stability": "dev",
     "prefer-stable": true

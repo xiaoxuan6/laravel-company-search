@@ -1,148 +1,148 @@
 {
-  "data": {
-    "page": "1",
-    "keyword": "遂宁市中通实业集团有限公司",
-    "result": {
-      "result": {
-        "investorList": [
-          {
-            "amount": 50,
-            "type": 2,
-            "name": "肖蓉",
-            "id": 2123022139
-          }
-        ],
-        "comChanInfoList": [
-          {
-            "changeItem": "财务负责人备案",
-            "changeTime": "2016-04-28",
-            "contentAfter": "姓名：熊昌华;证件类型：中华人民共和国居民身份证;证件号码：*****;移动电话：150****9090;联系电话：5860011;电子邮件：761737593@qq.com;",
-            "contentBefore": "姓名：;证件类型：;证件号码：;移动电话：;联系电话：;电子邮件：;"
-          },
-          {
-            "changeItem": "法定代表人变更",
-            "changeTime": "2005-06-22",
-            "contentAfter": "姓名: 何训; 证件号码: *****; 性别: ; 职务:",
-            "contentBefore": "姓名: 邓时明; 证件号码: *****; 性别: ; 职务:"
-          }
-        ],
-        "baseInfo": {
-          "updateTimes": 1494389177000,
-          "allCount": {
-            "ComAbnoInfoCount": 0,
-            "annuRepYear": 4,
-            "companyBidCount": 0,
-            "empCount": 0,
-            "patentCount": 0,
-            "staffCount": 8,
-            "comChanInfoCount": 29,
-            "bondCount": 0,
-            "branchCount": 0,
-            "investorCount": 12,
-            "comAbnoInfo": 0,
-            "tmCount": 0,
-            "copyrightRegCount": 0,
-            "lawSuitCount": 2,
-            "investCount": 7
-          },
-          "creditCode": "91510900752317692H",
-          "phoneNumber": "0825-5807992",
-          "companyId": 6318270,
-          "regCapital": "2000万人民币",
-          "approvedTime": 1461772800000,
-          "companyType": 201,
-          "base": "sc",
-          "industry": "商务服务业",
-          "companyOrgType": "有限责任公司(自然人投资或控股)",
-          "id": 317534367,
-          "categoryScore": 6522,
-          "legalPersonName": "杨耀华",
-          "regNumber": "510900000021844",
-          "regInstitute": "遂宁市工商行政管理局",
-          "actualCapital": "",
-          "websiteList": [
-            "http://www.snztjt.com"
-          ],
-          "updatetime": 1494389177964,
-          "flag": 1,
-          "percentileScore": 9625,
-          "legalPersonId": 2004140583,
-          "orgNumber": "752317692",
-          "regStatus": "存续（在营、开业、在册）",
-          "sourceFlag": "http://qyxy.baic.gov.cn/",
-          "estiblishTime": 1059321600000,
-          "businessScope": "项目投资（国家有专项规定的除外）；商业贸易；机械设备租赁。(不得从事非法集资、吸收公众资金等金融活动)。（依法须经批准的项目，经相关部门批准后方可开展经营活动）",
-          "fromTime": 1059321600000,
-          "type": 1,
-          "regLocation": "遂宁市开发区明月路139号永耀大厦二楼",
-          "name": "遂宁市中通实业集团有限公司",
-          "correctCompanyId": ""
-        },
-        "investList": [
-          {
-            "regStatus": "存续（在营、开业、在册）",
-            "id": 366603965,
-            "category": "商务服务业",
-            "amount": 0,
-            "pencertileScore": 8042,
-            "type": 1,
-            "base": "sc",
-            "legalPersonName": "段吉瑞",
-            "name": "四川坤道资产管理有限公司",
-            "correctCompanyId": ""
-          }
-        ],
-        "comAbnoInfoList": {},
-        "lawSuitTotal": 2,
-        "tmList": {},
-        "annuRepYearList": [
-          {
-            "reportYear": "2016",
-            "email": "无",
-            "id": 1705895022,
-            "phoneNumber": "0825-5807992"
-          }
-        ],
-        "branchList": {},
-        "staffList": [
-          {
-            "type": 2,
-            "typeJoin": [
-              "董事"
-            ],
-            "name": "赵冰",
-            "id": 2190450236
-          }
-        ],
-        "lawSuitList": [
-          {
-            "doctype": "民事裁定书",
-            "submittime": "1460476800000",
-            "casetype": "民事案件",
-            "court": "遂宁市船山区人民法院",
-            "url": "http://wenshu.court.gov.cn/content/content?DocID=901f3d55-91c5-4fbc-a8a4-83b133d29d2d",
-            "caseno": "（2016）川0903民初1219号",
-            "uuid": "8a47fcf434f3476ea301bc2a7a5f3861",
-            "title": "原告胡晓利诉被告杨耀华、张林、四川诺正投资管理有限公司、遂宁市中通实业集团有限公司民间借贷纠纷一审民事裁定书"
-          },
-          {
-            "doctype": "执行异议之诉一审民事裁定书",
-            "submittime": "1448553600000",
-            "casetype": "执行案件",
-            "court": "四川省遂宁市中级人民法院",
-            "url": "http://wenshu.court.gov.cn/content/content?DocID=8cb80dbe-2071-4b10-aa88-3fde19802c41",
-            "caseno": "（2015）遂中民初字第146号",
-            "uuid": "58bca5edc2d344c29a9442f18d67a6bc",
-            "title": "原告遂宁市中通实业集团有限公司与被告杨雪梅、第三人任勇案外人执行异议之诉一审民事裁定书"
-          }
-        ]
-      },
-      "reason": "ok",
-      "error_code": 0
+    "data": {
+        "page": "1",
+        "keyword": "遂宁市中通实业集团有限公司",
+        "result": {
+            "result": {
+                "investorList": [
+                    {
+                        "amount": 50,
+                        "type": 2,
+                        "name": "肖蓉",
+                        "id": 2123022139
+                    }
+                ],
+                "comChanInfoList": [
+                    {
+                        "changeItem": "财务负责人备案",
+                        "changeTime": "2016-04-28",
+                        "contentAfter": "姓名：熊昌华;证件类型：中华人民共和国居民身份证;证件号码：*****;移动电话：150****9090;联系电话：5860011;电子邮件：761737593@qq.com;",
+                        "contentBefore": "姓名：;证件类型：;证件号码：;移动电话：;联系电话：;电子邮件：;"
+                    },
+                    {
+                        "changeItem": "法定代表人变更",
+                        "changeTime": "2005-06-22",
+                        "contentAfter": "姓名: 何训; 证件号码: *****; 性别: ; 职务:",
+                        "contentBefore": "姓名: 邓时明; 证件号码: *****; 性别: ; 职务:"
+                    }
+                ],
+                "baseInfo": {
+                    "updateTimes": 1494389177000,
+                    "allCount": {
+                        "ComAbnoInfoCount": 0,
+                        "annuRepYear": 4,
+                        "companyBidCount": 0,
+                        "empCount": 0,
+                        "patentCount": 0,
+                        "staffCount": 8,
+                        "comChanInfoCount": 29,
+                        "bondCount": 0,
+                        "branchCount": 0,
+                        "investorCount": 12,
+                        "comAbnoInfo": 0,
+                        "tmCount": 0,
+                        "copyrightRegCount": 0,
+                        "lawSuitCount": 2,
+                        "investCount": 7
+                    },
+                    "creditCode": "91510900752317692H",
+                    "phoneNumber": "0825-5807992",
+                    "companyId": 6318270,
+                    "regCapital": "2000万人民币",
+                    "approvedTime": 1461772800000,
+                    "companyType": 201,
+                    "base": "sc",
+                    "industry": "商务服务业",
+                    "companyOrgType": "有限责任公司(自然人投资或控股)",
+                    "id": 317534367,
+                    "categoryScore": 6522,
+                    "legalPersonName": "杨耀华",
+                    "regNumber": "510900000021844",
+                    "regInstitute": "遂宁市工商行政管理局",
+                    "actualCapital": "",
+                    "websiteList": [
+                        "http://www.snztjt.com"
+                    ],
+                    "updatetime": 1494389177964,
+                    "flag": 1,
+                    "percentileScore": 9625,
+                    "legalPersonId": 2004140583,
+                    "orgNumber": "752317692",
+                    "regStatus": "存续（在营、开业、在册）",
+                    "sourceFlag": "http://qyxy.baic.gov.cn/",
+                    "estiblishTime": 1059321600000,
+                    "businessScope": "项目投资（国家有专项规定的除外）；商业贸易；机械设备租赁。(不得从事非法集资、吸收公众资金等金融活动)。（依法须经批准的项目，经相关部门批准后方可开展经营活动）",
+                    "fromTime": 1059321600000,
+                    "type": 1,
+                    "regLocation": "遂宁市开发区明月路139号永耀大厦二楼",
+                    "name": "遂宁市中通实业集团有限公司",
+                    "correctCompanyId": ""
+                },
+                "investList": [
+                    {
+                        "regStatus": "存续（在营、开业、在册）",
+                        "id": 366603965,
+                        "category": "商务服务业",
+                        "amount": 0,
+                        "pencertileScore": 8042,
+                        "type": 1,
+                        "base": "sc",
+                        "legalPersonName": "段吉瑞",
+                        "name": "四川坤道资产管理有限公司",
+                        "correctCompanyId": ""
+                    }
+                ],
+                "comAbnoInfoList": {},
+                "lawSuitTotal": 2,
+                "tmList": {},
+                "annuRepYearList": [
+                    {
+                        "reportYear": "2016",
+                        "email": "无",
+                        "id": 1705895022,
+                        "phoneNumber": "0825-5807992"
+                    }
+                ],
+                "branchList": {},
+                "staffList": [
+                    {
+                        "type": 2,
+                        "typeJoin": [
+                            "董事"
+                        ],
+                        "name": "赵冰",
+                        "id": 2190450236
+                    }
+                ],
+                "lawSuitList": [
+                    {
+                        "doctype": "民事裁定书",
+                        "submittime": "1460476800000",
+                        "casetype": "民事案件",
+                        "court": "遂宁市船山区人民法院",
+                        "url": "http://wenshu.court.gov.cn/content/content?DocID=901f3d55-91c5-4fbc-a8a4-83b133d29d2d",
+                        "caseno": "（2016）川0903民初1219号",
+                        "uuid": "8a47fcf434f3476ea301bc2a7a5f3861",
+                        "title": "原告胡晓利诉被告杨耀华、张林、四川诺正投资管理有限公司、遂宁市中通实业集团有限公司民间借贷纠纷一审民事裁定书"
+                    },
+                    {
+                        "doctype": "执行异议之诉一审民事裁定书",
+                        "submittime": "1448553600000",
+                        "casetype": "执行案件",
+                        "court": "四川省遂宁市中级人民法院",
+                        "url": "http://wenshu.court.gov.cn/content/content?DocID=8cb80dbe-2071-4b10-aa88-3fde19802c41",
+                        "caseno": "（2015）遂中民初字第146号",
+                        "uuid": "58bca5edc2d344c29a9442f18d67a6bc",
+                        "title": "原告遂宁市中通实业集团有限公司与被告杨雪梅、第三人任勇案外人执行异议之诉一审民事裁定书"
+                    }
+                ]
+            },
+            "reason": "ok",
+            "error_code": 0
+        }
+    },
+    "resp": {
+        "RespCode": "200",
+        "RespMsg": "查询成功"
     }
-  },
-  "resp": {
-    "RespCode": "200",
-    "RespMsg": "查询成功"
-  }
 }

@@ -1,8 +1,8 @@
 <?php
 /**
- * This file is part of PHP CS Fixer.
+ * This file is part of james.xue/laravel-company-search.
  *
- * (c) vinhson <15227736751@qq.com>
+ * (c) xiaoxuan6 <15227736751@qq.com>
  *
  * This source file is subject to the MIT license that is bundled
  * with this source code in the file LICENSE.
@@ -18,8 +18,8 @@ class ResultResponse
     public const ERROR_CODE = [
         400 => '访问方式错误',
         401 => '请求参数不合法',
-        402 => 'appkey验证错误或服务请求次数为0',
-        403 => 'appkey不能为空',
+        402 => 'appkey 验证错误或服务请求次数为0',
+        403 => 'appkey 不能为空',
         500 => '系统服务错误',
         501 => '系统无记录',
     ];
@@ -54,7 +54,7 @@ class ResultResponse
         return $this->response['data']['data']['result']['result'] ?? [];
     }
 
-    /*X
+    /**
      * 股东信息
      * @return array
      */
